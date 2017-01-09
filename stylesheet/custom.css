@@ -1,6 +1,6 @@
 body {
     color: #555555;
-    font-family: 'Noto Sans',sans-serif;
+    font-family:"Roboto Condensed",sans-serif; 
   height:100%;
 }
 /**********************************************************************/
@@ -318,6 +318,20 @@ h3.sectionTitle {
     padding: 15px 0;
     text-align: center;
 }
+#pricingWrap ul.priceTable li {padding:9px;}
+
+#pricingWrap .priceTable .button-group button {
+  background: #167e8d none repeat scroll 0 0;
+  padding: 10px;
+  font-size:20px;
+  color:#fff;
+}
+
+#pricingWrap .priceTable.alt .button-group button {
+  background: #fff none repeat scroll 0 0;
+  color:#333;
+}
+
 #pricingWrap .priceTable .call {
   margin: 30px 10px;
 }
@@ -387,7 +401,6 @@ h3.sectionTitle {
 /********************************************************************/
 #contactWrap {
   padding-top: 60px;
-  padding-bottom: 60px;
 }
 #contactWrap .overlay {
     background: url("../assets/img/60.png");
@@ -430,7 +443,7 @@ h3.sectionTitle {
     margin-top: 15px;
     width: 100%;
 }
-
+#bottomtWrap {padding-top:40px;padding-bottom:60px;}
 /**********************************************************************/
 /************************* FOOTER ************************************/
 /********************************************************************/
@@ -540,10 +553,16 @@ only screen and (max-width: 760px),
   /*
   Label the data
   */
-  td:nth-of-type(1):before { content: "Servicio"; }
-  td:nth-of-type(2):before { content: "Software"; }
-  td:nth-of-type(3):before { content: "Descripción"; }
-  td:nth-of-type(4):before { content: "Funciona como"; }
+  #servicios td:nth-of-type(1):before { content: "Servicio"; }
+  #servicios td:nth-of-type(2):before { content: "Software"; }
+  #servicios td:nth-of-type(3):before { content: "Descripción"; }
+  #servicios td:nth-of-type(4):before { content: "Funciona como"; }
+
+  #services td:nth-of-type(1):before { content: "Service"; }
+  #services td:nth-of-type(2):before { content: "Software"; }
+  #services td:nth-of-type(3):before { content: "Descriptión"; }
+  #services td:nth-of-type(4):before { content: "Works like"; }
+
   
   .img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img {display:inline-block;}
 

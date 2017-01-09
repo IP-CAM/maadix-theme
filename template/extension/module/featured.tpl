@@ -1,4 +1,3 @@
-<h3><?php echo $heading_title; ?></h3>
 <div id="pricingWrap" class="purchase">
 <div class="row">
   <?php $c=0;?>
