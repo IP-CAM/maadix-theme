@@ -15,7 +15,8 @@
                   <ul class="features">
                   <?php if ($attribute_groups) { ?>
                     <?php foreach ($attribute_groups as $attribute_group) { ?>
-                    <?php if( $attribute_group['name'] == 'Technical'){ ?>
+                    <?php // Only sshow Features attributes ?>
+                    <?php if( $attribute_group['attribute_group_id'] == '4'){ ?>
                       <?php foreach ($attribute_group['attribute'] as $attribute) { ?>
                         <li><?php echo $attribute['name']; ?>: <?php echo $attribute['text'];?></li>
                       <?php } ?>

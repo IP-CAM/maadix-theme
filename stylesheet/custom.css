@@ -150,6 +150,7 @@ h3.sectionTitle {
     .btn-inverse:focus, .btn-inverse:hover {color:#D5045C;}
     .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {background-color:transparent;color:#333;}
     #push-down{    padding-top: 140px;}
+    .dropdown-menu{min-width: 110px;}
 /**********************************************************************/
 /************************** JUMBOTRON ********************************/
 /********************************************************************/
@@ -555,12 +556,12 @@ only screen and (max-width: 760px),
   */
   #servicios td:nth-of-type(1):before { content: "Servicio"; }
   #servicios td:nth-of-type(2):before { content: "Software"; }
-  #servicios td:nth-of-type(3):before { content: "Descripción"; }
+  #servicios td:nth-of-type(3):before { content: "Alternativa a"; }
   #servicios td:nth-of-type(4):before { content: "Funciona como"; }
 
   #services td:nth-of-type(1):before { content: "Service"; }
   #services td:nth-of-type(2):before { content: "Software"; }
-  #services td:nth-of-type(3):before { content: "Descriptión"; }
+  #services td:nth-of-type(3):before { content: "Works like"; }
   #services td:nth-of-type(4):before { content: "Works like"; }
 
   
