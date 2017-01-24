@@ -50,8 +50,9 @@
           //$currentpage=trim($currentpage, '/');
         } else { //Only load this script in the home page
         ?>
-        <script src="catalog/view/javascript/custom.js" type="text/javascript"></script>
+        <script src="catalog/view/theme/maadix-theme/js/home.js" type="text/javascript"></script>
         <?php } ?>
+<script src="catalog/view/theme/maadix-theme/js/custom.js" type="text/javascript"></script>
 <?php foreach ($links as $link) { ?>
 <link href="<?php echo $link['href']; ?>" rel="<?php echo $link['rel']; ?>" />
 <?php } ?>

@@ -150,10 +150,12 @@
               </div>
             </div>
             <?php } ?>
+            <?php if ($option['product_option_id']== '231' || $option['product_option_id'] == '234' || $option['product_option_id'] == '236' || $option['product_option_id'] == '239') $addclass='checkdomain';?>
             <?php if ($option['type'] == 'text') { ?>
             <div class="form-group<?php echo ($option['required'] ? ' required' : ''); ?>">
               <label class="control-label" for="input-option<?php echo $option['product_option_id']; ?>"><?php echo $option['name']; ?></label>
-              <input type="text" name="option[<?php echo $option['product_option_id']; ?>]" value="<?php echo $option['value']; ?>" placeholder="<?php echo $option['name']; ?>" id="input-option<?php echo $option['product_option_id']; ?>" class="form-control" />
+              <input type="text" name="option[<?php echo $option['product_option_id']; ?>]" value="<?php echo $option['value']; ?>" placeholder="<?php echo $option['name']; ?>" id="input-option<?php echo $option['product_option_id']; ?>" class="form-control <?php echo $addclass;?>" />
+                  <div id="result_name"></div>
             </div>
             <?php } ?>
             <?php if ($option['type'] == 'textarea') { ?>
@@ -216,11 +218,7 @@
             <?php } ?>
             <div class="form-group">
               <label class="control-label" for="input-quantity"><?php echo $entry_qty; ?></label>
-              <select id="input-quantity" name="quantity">
-                <option vlaue="1">1 Month</option>
-                <option vlaue="4">4 Month</option>
-                <option vlaue="12">1 Year</option>
-                </select>
+              <input type="text" name="quantity" value="<?php echo $minimum; ?>" size="2" id="input-quantity" class="form-control" readonly />
               <input type="hidden" name="product_id" value="<?php echo $product_id; ?>" />
               <br />
               <button type="button" id="button-cart" data-loading-text="<?php echo $text_loading; ?>" class="btn btn-primary btn-lg btn-block"><?php echo $button_cart; ?></button>
