@@ -1,17 +1,15 @@
 $(document).ready(function(){
-//   var product_id=$('input[name=product_id]').val();
+   var product_id=$('input[name=product_id]').val();
 //   alert (product_id);
     $(".checkdomain").blur(function()
     {       
     /* minim 3 characters*/
         var option  = $(this).val();   
         var product_id=$('input[name=product_id]').val();
-        alert(product_id)
-        console.log(product_id);
+        console.log(option);
         if(option.length < 3)
         {
             $("#result_name").html('<span class="error"> <i class="fa fa-exclamation-triangle icon checkko alert-danger"></i> <em>El nombre de usuario tiene que tener mínimo 3 carácteres</em></span>');
-      console.log(option);
         }
  
         else if(option.length > 2)
@@ -33,7 +31,6 @@ $(document).ready(function(){
                 success : function(data)
                           {
                              $("#result_name").html(data);
-              console.log(data);
                           }
                 });
                 return false;

@@ -28,7 +28,7 @@ switch ($prod_id){
 //$option = $searchVal[$option_number];
 try {
 //$result = $mPDO->query("SELECT * FROM  " . DB_PREFIX ."order_option WHERE product_option_value_id='0' AND value='" .  $searchVal. "'");
-  $result = $mPDO->query("SELECT * FROM  " . DB_PREFIX ."order_option WHERE product_option_id='" . $option_number . "' AND value='" . $option ."';");
+  $result = $mPDO->query("SELECT * FROM  " . DB_PREFIX ."order_option WHERE product_option_id='" . $option_number . "' AND value='" . $searchVal."';");
    $cart_result= $mPDO->query("SELECT * FROM mdx_cart WHERE `option` LIKE '%\"" . $searchVal. "\"%'") ;
 #$stmtdom->execute(array(":accountName"=>$option));
 #$result= $stmtdom->fetch(PDO::FETCH_ASSOC);
