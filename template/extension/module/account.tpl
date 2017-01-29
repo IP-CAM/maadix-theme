@@ -12,7 +12,7 @@
   <a href="<?php echo $address; ?>" class="list-group-item"><?php echo $text_address; ?></a>
  <!-- <a href="<?php echo $wishlist; ?>" class="list-group-item"><?php echo $text_wishlist; ?></a>-->
   <a href="<?php echo $order; ?>" class="list-group-item"><?php echo $text_order; ?></a>
-  <a href="<?php echo $invoices; ?>" class="list-group-item"><?php echo $text_recurring; ?></a>
+  <a href="<?php echo $invoices; ?>" class="list-group-item"><?php echo $text_invoices; ?></a>
 <!--  <a href="<?php echo $download; ?>" class="list-group-item"><?php echo $text_download; ?></a>-->
 <!--  <a href="<?php echo $recurring; ?>" class="list-group-item"><?php echo $text_recurring; ?></a>-->
 <!--  <a href="<?php echo $reward; ?>" class="list-group-item"><?php echo $text_reward; ?></a>-->
