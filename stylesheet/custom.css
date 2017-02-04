@@ -20,6 +20,7 @@ a:focus {
 .btn:focus, .btn:active:focus, .btn.active:focus {
     outline: none;
 }
+a.btn-info.payed {background-color: #167e8d;border-color:#167e8d; background-image: linear-gradient(to bottom, #167e8d, #167e8d);}
 /** Custom styles **/
 .vis-hidden {
   visibility: hidden !important;

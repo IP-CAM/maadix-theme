@@ -41,7 +41,8 @@
               <td class="text-left"><?php echo $invoice['factPeriod']; ?></td>
               <td class="text-right"><?php echo $invoice['amount']; ?></td>
               <td class="text-left"><?php echo $invoice['status']; ?></td>
-              <td class="text-right"><a href="<?php echo $invoice['view']; ?>" data-toggle="tooltip" title="<?php echo $button_view; ?>" class="btn btn-info"><i class="fa fa-eye"></i></a></td>
+              <?php $payed=($invoice['invoice_status_id'] == '2') ? 'payed' : '';?>
+              <td class="text-right"><a href="<?php echo $invoice['view']; ?>" data-toggle="tooltip" title="<?php echo $button_view; ?>" class="btn btn-info <?php echo $payed ;?>"><i class="fa fa-eye"></i></a></td>
             </tr>
             <?php } ?>
           </tbody>
