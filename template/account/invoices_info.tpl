@@ -200,7 +200,7 @@
       </table>
       <div id="checkout-confirm"></div>
       <div class="buttons clearfix">
-        <div class="pull-right"><a href="<?php echo $continue; ?>" class="btn btn-primary"><?php echo $button_continue; ?></a></div>
+        <div class="pull-left"><a href="<?php echo $continue; ?>" class="btn btn-primary"><?php echo $text_back; ?></a></div>
       </div>
       <?php echo $content_bottom; ?></div>
     <?php echo $column_right; ?></div>
@@ -209,7 +209,6 @@
 <script type="text/javascript">
 $(document).ready(function(){
 $('#button-payment-method').click(function() {
-    alert('click');
     $.ajax({
         url: 'index.php?route=account/gateway/save',
         type: 'post',
@@ -230,6 +229,11 @@ $('#button-payment-method').click(function() {
                     $('#payment-method .panel-body').prepend('<div class="alert alert-danger">' + json['error']['warning'] + '<button type="button" class="close" data-dismiss="alert">&times;</button></div>');
                 }
             } else {
+              $('html,body').animate({
+                
+                  scrollTop: $('#checkout-confirm').offset().top - $('.navbar-header').outerHeight(true) + 1
+                }, 1000);
+                //return false;
                 $.ajax({
                     url: 'index.php?route=account/gateway&invoice_id=<?php echo $invoice_id;?>',
                     dataType: 'html',
